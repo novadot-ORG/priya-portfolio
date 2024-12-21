@@ -1,0 +1,144 @@
+/* General Page Styling */
+.projects {
+    padding: 40px;
+    background-color: #FFF9F0; /* Light Sand */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background */
+.projects::before, .projects::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFD3B4, #FF7B9C); /* Peach to Coral gradient */
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.projects::before {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -50px;
+}
+
+.projects::after {
+    width: 400px;
+    height: 400px;
+    bottom: -150px;
+    right: -100px;
+}
+
+/* Title and Intro */
+.projects-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #FF5E57; /* Sunset Orange */
+    margin-bottom: 20px;
+}
+
+.projects-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #FFF;
+    border: 1px solid #FF7B9C; /* Coral Border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Project Card Hover Effect */
+.project-card:hover {
+    background-color: #FFE6E9; /* Light Coral */
+    color: #333; /* Maintain readability */
+    transform: translateY(-10px);
+    border-color: #FF5E57; /* Sunset Orange */
+}
+
+/* Title Styling */
+.project-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+    color: #FF5E57; /* Sunset Orange */
+}
+
+/* Description */
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-description {
+    color: #444; /* Slightly darker for contrast */
+}
+
+/* Tech Stack and Features Titles */
+.project-techstack-title,
+.project-features-title {
+    font-size: 1.2rem;
+    color: #FF5E57; /* Sunset Orange */
+    margin-bottom: 10px;
+}
+
+/* Tech Stack and Features Lists */
+.project-techstack,
+.project-features {
+    list-style: none;
+    padding: 0;
+}
+
+.project-techstack li,
+.project-features li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-techstack li,
+.project-card:hover .project-features li {
+    color: #FF5E57; /* Sunset Orange */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+  
+  

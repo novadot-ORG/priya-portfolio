@@ -1,0 +1,74 @@
+.navbar {
+    background: linear-gradient(135deg, #FF7B9C, #FFD3B4); /* Coral Pink to Pastel Peach */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    color: #FFF9F0; /* Light Sand */
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+    letter-spacing: 1px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Even spacing between links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #FFF9F0; /* Light Sand */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #FF5E57; /* Sunset Orange */
+    transform: scale(1.1); /* Subtle zoom effect on hover */
+  }
+  
+  /* Add active link styling for better UX */
+  .navbar a.active {
+    color: #FF5E57; /* Sunset Orange */
+    border-bottom: 2px solid #FF5E57; /* Highlight active link */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .navbar a {
+      font-size: 1.1rem;
+    }
+  }
+  

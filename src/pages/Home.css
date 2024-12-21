@@ -1,0 +1,149 @@
+/* General Layout */
+.home {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center content when wrapped */
+    padding: 40px;
+    background-color: #FFF9F0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Left Section */
+.left-side {
+    width: 60%; /* Default width for larger screens */
+    padding-right: 30px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+/* Right Section */
+.right-side {
+    width: 35%; /* Default width for larger screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+/* Ensure consistent width and alignment for the left-side content */
+.left-side {
+    width: 50%;
+    padding-right: 30px;
+    animation: fadeInLeft 1s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Align contents vertically */
+    justify-content: space-between; /* Add spacing between sections */
+    gap: 20px; /* Space between sections */
+}
+
+/* Contact Section - Ensure it aligns properly */
+.contact {
+    margin-top: 20px; /* Adjust spacing */
+    padding: 20px;
+    border: 1px solid #FFD3B4; /* Optional decorative border */
+    border-radius: 8px;
+    background-color: #FFF9F0; /* Ensure background matches */
+    text-align: left; /* Align content to the left */
+    width: 100%; /* Matches the width of other sections */
+}
+
+/* Ensure "Contact Me" icons align properly */
+.contact-icons {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the start */
+    align-items: center; /* Center icons vertically */
+    gap: 20px; /* Adds spacing between icons */
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+    .left-side {
+        width: 100%; /* Full width for mobile */
+        padding-right: 0;
+        gap: 15px; /* Adjust spacing for smaller screens */
+    }
+
+    .contact {
+        text-align: center; /* Center content for mobile */
+    }
+
+    .contact-icons {
+        justify-content: center; /* Center icons on smaller screens */
+    }
+}
+
+
+/* Responsiveness for Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+    .left-side, .right-side {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center align text */
+    }
+
+    .left-side {
+        padding-right: 0; /* Remove extra padding */
+    }
+
+    .skills-list {
+        justify-content: center; /* Center skills list */
+    }
+}
+
+/* Responsiveness for Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+        padding: 20px; /* Reduce padding for small screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+
+    .profession {
+        font-size: 1.5rem; /* Adjust profession size */
+    }
+
+    .about-me {
+        font-size: 1.1rem; /* Reduce font size */
+    }
+
+    .skills-list li {
+        font-size: 1rem; /* Adjust font size of skills */
+        padding: 8px 15px; /* Adjust padding for smaller buttons */
+    }
+
+    .profile-photo {
+        width: 150px; /* Reduce photo size */
+        height: 150px;
+    }
+
+    .name-bottom {
+        font-size: 1.2rem; /* Reduce text size */
+    }
+}
+
+/* Additional Tweaks for Extra Small Screens (e.g., very small phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Further reduce heading size */
+    }
+
+    .skills-list {
+        flex-direction: column; /* Stack skills vertically */
+        align-items: center;
+    }
+
+    .skills-list li {
+        width: auto; /* Make skills auto-width */
+    }
+
+    .contact-icons a {
+        font-size: 1.5rem; /* Reduce icon size */
+    }
+}
+
+

@@ -1,0 +1,189 @@
+/* General Styling */
+.contact {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 40px;
+  background: linear-gradient(135deg, #FFF9F0, #FFD3B4); /* Light Sand to Pastel Peach */
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.contact:hover {
+  transform: scale(1.01); /* Subtle scale effect */
+}
+
+/* Introduction Section */
+.contact-intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-intro h2 {
+  font-size: 2.5rem;
+  color: #FF5E57; /* Sunset Orange */
+  margin-bottom: 10px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease-out;
+}
+
+.contact-intro p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Form Styling */
+.contact-form {
+  background: rgba(255, 123, 156, 0.2); /* Coral Pink with transparency */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px); /* Glass effect */
+}
+
+.contact-form:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 123, 156, 0.4);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #1D4D49;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 94, 87, 0.5); /* Sunset Orange glow */
+  border-color: #FF5E57;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #FF5E57, #FF7B9C); /* Sunset Orange to Coral Pink */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #FF7B9C, #FFD3B4); /* Coral Pink to Pastel Peach */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(255, 94, 87, 0.4); /* Glow effect */
+}
+
+/* Contact Details */
+.contact-details {
+  padding: 25px;
+  background: #FFF9F0; /* Light Sand */
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* "Get In Touch" Heading */
+.contact-details h3 {
+  font-size: 1.8rem;
+  color: #FF5E57; /* Sunset Orange */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.social-links a {
+  font-size: 2rem;
+  color: #FF5E57;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #FFD3B4; /* Pastel Peach */
+  transform: rotate(360deg);
+  animation: pulse 0.8s infinite;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive Design */
+.contact-content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-details {
+    margin-top: 0;
+  }
+}
+
+
+
+  
+  
+  
